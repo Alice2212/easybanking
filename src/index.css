@@ -1,16 +1,180 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  margin: 0 auto;
+}
+
+.hero-image {
+  height: 41rem;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 3;
+  order: 2;
+  background-image: none;
+}
+
+.hero-image::before {
+  content: "";
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  background: url("Assets/bg-intro-desktop.svg");
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: 0% 83%;
+  margin-bottom: 2.625;
+}
+
+.hero-image::after {
+  content: "";
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  background: url("Assets/image-mockups.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  left: 21.5%;
+  margin-bottom: 2.625;
+}
+
+.hero-text {
+  flex: 2;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.hero-text button {
+  height: 2.75rem;
+  width: 9.25rem;
+  border-radius: 1.25rem;
+  border: none;
+  background-color: hsl(136, 65%, 51%);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.313rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-text p {
+  margin-bottom: 1.938rem;
+}
+
+.features {
+  width: 100%;
+  margin: -6% 0 0;
+  padding: 7% 10%;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--light-grayish-blue);
+}
+
+.features__content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.features__copy {
+  width: 70%;
+  line-height: 1.5rem;
+}
+
+.features__cards {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.features-card {
+  width: 20%;
+  margin: 0 1%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.features-card__header,
+.features-card__copy {
+  text-align: left;
+}
+
+.features-card__copy {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-image {
+    min-height: 25rem;
+    position: center 70%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero {
+    background-color: hsl(0, 0%, 98%);
+  }
+
+  .hero-image {
+    background: url("Assets/bg-intro-mobile.svg");
+    min-height: 17.5rem;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  /* .hero-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("Assets/image-mockups.png");
+  margin: auto;
+  display: block;
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 2.625;
+}
+
+  .hero-text {
+    text-align: center;
+  } */
+
+  /* .hero-text h1 {
+    font-weight: 300;
+    font-size: 2.313rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-text p {
+    margin-bottom: 1.938rem;
+  } */
 }
