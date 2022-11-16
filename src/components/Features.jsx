@@ -12,8 +12,7 @@ function Feature(){
           <div className="features__content">
             <h1 className="features__header">Why choose Easybank?</h1>
             <p className="features__copy">
-              We leverage Open Banking to turn your bank account into your
-              financial hub. Control your finances like never before.
+              We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
             </p>
           </div>
           <div className="features__cards">
@@ -47,7 +46,7 @@ function Feature(){
                 src={onboardingImg}
                 alt="icon with people"
               />
-              <h1 className="features-card__header">Fast Onboarding</h1>
+              <h1 className="features-card__header">icon with people</h1>
               <p className="features-card__copy">
                 We don't do branches. Open your account in minutes online and
                 start taking control of your finances right away.
