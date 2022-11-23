@@ -1,5 +1,6 @@
 import React from "react";
 import details from "./Features-Details";
+import "./Features.css"
 
 function Feature() {
   const listDetails = details.map((data) => (

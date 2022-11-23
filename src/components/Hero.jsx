@@ -1,22 +1,27 @@
 import React from "react";
+import Mockups from "../Assets/image-mockups.png";
+import "./Hero.css";
 
-function Hero() {
+const Hero = () => {
   return (
-    <section className="hero ">
-      <div className="container">
-        <div className="hero-image"></div>
-        <div className="hero-text">
-          <h1 className="text-red-600">Next generation digital banking</h1>
-          <p>
-            Take your financial life online. Your Easybank account will be
-            one-stop-shop for spending, saving, budgeting, investing and much
-            more
+    <div className="header">
+      <div className="wrapper">
+        <div className="header__info">
+          <h2 className="header__heading">Next generation digital banking</h2>
+          <p className="header__paragraph">
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
           </p>
-          <button className="hero-cta">Request Invite</button>
+          <button className="req_btn">Request Invite</button>
+        </div>
+        <div className="hero__img">
+          <div className="img__bg"></div>
+          <img className="mockups" src={Mockups} alt="mockups" />
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default Hero;

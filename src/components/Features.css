@@ -1,0 +1,120 @@
+.features {
+  width: 100%;
+  margin: -6% 0 0;
+  padding: 7% 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: hsl(220, 16%, 96%);
+}
+
+.features__content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.features__header {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.features__copy {
+  width: 80%;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-bottom: 2rem;
+  color: var(--Grayish-Blue);
+}
+
+.features__cards {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.features-card {
+  width: 20%;
+  margin: 0 1%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.features-card__header,
+.features-card__copy {
+  text-align: left;
+}
+
+.features-card__header {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.features-card__copy {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.features-card__img {
+  height: 4.375rem;
+  width: 4.563rem;
+  margin-bottom: 1.375rem;
+}
+
+@media screen and (max-width: 640px) {
+  .features {
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+    padding: 0.5rem;
+    background-color: hsl(0, 0%, 98%);
+  }
+
+  .features__content {
+    align-items: center;
+    margin-bottom: 3.188rem;
+  }
+
+  .features-card {
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .features-card h1 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .features-card p {
+    margin-bottom: 1.938rem;
+  }
+
+  .features__content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.313rem;
+  }
+
+  .features__copy {
+    font-size: 0.875rem;
+  }
+
+  .features-card__header,
+  .features-card__copy {
+    text-align: center;
+  }
+}
