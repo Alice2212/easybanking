@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
 :root{
   --Dark-Blue: hsl(233, 26%, 24%);
   --Lime-Green: hsl(136, 65%, 51%);

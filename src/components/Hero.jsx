@@ -6,17 +6,17 @@ const Hero = () => {
   return (
     <div className="header">
       <div className="wrapper">
-        <div className="header__info">
-          <h2 className="header__heading">Next generation digital banking</h2>
-          <p className="header__paragraph">
+        <div className="header-info">
+          <h2 className="header-heading">Next generation digital banking</h2>
+          <p className="header-paragraph">
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
           </p>
-          <button className="req_btn">Request Invite</button>
+          <button className="btn">Request Invite</button>
         </div>
-        <div className="hero__img">
-          <div className="img__bg"></div>
+        <div className="hero-img">
+          <div className="bg-img"></div>
           <img className="mockups" src={Mockups} alt="mockups" />
         </div>
       </div>
