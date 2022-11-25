@@ -1,7 +1,7 @@
-import onlineImg from "../Assets/icon-online.svg";
-import budgetImg from "../Assets/icon-budgeting.svg"
-import onboardingImg from "../Assets/icon-onboarding.svg"
-import apiImg from "../Assets/icon-api.svg";
+import onlineImg from "../assets/icon-online.svg";
+import budgetImg from "../assets/icon-budgeting.svg"
+import onboardingImg from "../assets/icon-onboarding.svg"
+import apiImg from "../assets/icon-api.svg";
 
 const details = [
     {
