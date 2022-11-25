@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Feature from "./components/Features";
+import LatestArticles from "./components/LatestArticles";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
        <Hero />
       <Feature /> 
+      <LatestArticles />
     
     </div>
   );

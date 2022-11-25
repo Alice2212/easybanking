@@ -1,5 +1,5 @@
 import React from "react";
-import Mockups from "../assets/image-mockups.png";
+import Mockups from "../assets/img/image-mockups.png";
 import "./Hero.css";
 
 const Hero = () => {

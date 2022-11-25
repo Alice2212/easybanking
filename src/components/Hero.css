@@ -47,7 +47,7 @@
     inset: -42% 0 0 42%;
     content: "";
     position: absolute;
-    background: url("../assets/bg-intro-desktop.svg");
+    background: url("../assets/img/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
     right: -150px;
@@ -90,7 +90,7 @@
       right: 0.1;
     }
     .bg-img {
-      background: url("../assets/bg-intro-mobile.svg");
+      background: url("../assets/img/bg-intro-mobile.svg");
       position: absolute;
       width: 100%;
       left: 0;

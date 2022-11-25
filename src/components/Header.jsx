@@ -1,17 +1,17 @@
 import {React, useState} from 'react'
-import Logo from '../assets/logo.svg'
+import Logo from '../assets/img/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
-    const [isActive, setIsActive] = useState(true)
+    const [isActive, setIsActive] = useState(false)
     const handleClick = (event) => {
       setIsActive((current) => !current);
     }
   return (
-   <header className='max-w-[80%] relative mx-auto max-[600px]:max-w-[90%] flex justify-between py-8'>
+   <header className='max-w-[80%] relative mx-auto max-[600px]:max-w-[90%] flex justify-between py-6'>
     <div>
-      <img src={Logo}  alt="Logo" />
+      <img src={Logo} width="150" height="100" alt="Logo" />
     </div>
 <ul className='flex text-lg font-medium text-gray  max-[786px]:hidden'>
   <li>Home</li>
